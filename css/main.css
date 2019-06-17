@@ -9,7 +9,7 @@ p {
 
 hr {
   margin: 0 auto;
-  max-width: 45%;
+  max-width: 75%;
   border: 1px solid #889fb1;
 }
 
@@ -86,4 +86,46 @@ hr {
 .p-foot {
   background-color: #ffbf96;
   color: #fff;
+}
+
+@media only screen and (min-width: 20em) {
+
+  .nav {
+    padding: .5em;
+  }
+
+  .nav li {
+    padding-bottom: .5em;
+  }
+
+  .cat-text {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .logo {
+    text-align: left;
+  }
+
+  .nav {
+    text-align: right;
+  }
+
+  .banner-index {
+    height: 60vh;
+  }
+
+  .banner,
+  .card {
+    min-height: 0;
+  }
+
+  .banner-content {
+    margin-left: 3em;
+  }
+
 }
