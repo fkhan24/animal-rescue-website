@@ -9,12 +9,21 @@ p {
 
 hr {
   margin: 0 auto;
-  max-width: 75%;
+  max-width: 70%;
   border: 1px solid #889fb1;
+}
+
+.h2-break {
+  max-width: 10em;
+  color: #fff;
 }
 
 .masthead {
   background-color: #889fb1;
+}
+
+.logo {
+  text-align: center;
 }
 
 .nav {
@@ -47,7 +56,7 @@ hr {
 
 .banner-index {
   background: linear-gradient(to right, rgba(30, 9, 88, .2), rgba(30, 9, 88, 0)), url("../images/banner.jpg");
-  height: 40vh;
+  height: 50vh;
   background-size: cover;
   min-height: 16em;
   overflow: hidden;
@@ -84,8 +93,16 @@ hr {
 }
 
 .p-foot {
-  background-color: #ffbf96;
+  background-color: #889fb1;
   color: #fff;
+}
+
+.btn-footer {
+  color: #fff;
+}
+
+.btn-footer:hover {
+  color: #ffbf96;
 }
 
 @media only screen and (min-width: 20em) {
