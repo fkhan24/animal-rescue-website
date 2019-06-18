@@ -112,6 +112,10 @@ textarea, input, select {
   border-width: thin;
 }
 
+fieldset {
+  border-top: 0;
+}
+
 @media only screen and (min-width: 20em) {
 
   .nav {

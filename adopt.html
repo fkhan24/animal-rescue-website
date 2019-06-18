@@ -19,30 +19,30 @@
     <li><a href="#nav">Jump to navigation</a></li>
   </ul>
 
-  <main id="main" tabindex="0" role="main">
-
-    <header role="banner">
-      <div class="masthead grid grid-middle gutter-1-2">
-        <div class="logo push-0 unit xs-1 s-1 m-1 l-1-4">
-          <a href="index.html" aria-label="Click here to go to homepage">
-            <div class="embed embed-4by1 push-r-1-4">
-              <img class="embed-item" src="images/logo.svg" alt="" role="presentation">
-            </div>
-          </a>
-        </div>
-        <div class="nav unit xs-1 s-1 m-1 l-3-4">
-          <nav id="nav" tabindex="0" role="navigation">
-            <ul class="list-group-inline micro push-0">
-              <li class="gutter-1-8"><a id="current" class="btn" href="index.html" aria-label="Click here to go to homepage">Home</a></li>
-              <li class="gutter-1-8"><a class="btn" href="rescues.html" aria-label="Click here to meet the rescues">Cats</a></li>
-              <li class="gutter-1-8"><a class="btn" href="adopt.html" aria-label="Click here to file our forms">Adopt</a></li>
-              <li class="gutter-1-8"><a class="btn" href="#" aria-label="Click here to go to Contact page">Contact</a></li>
-              <li class="gutter-1-8"><a class="btn" href="#" aria-label="Click here to go to learn more about us">About Us</a></li>
-            </ul>
-          </nav>
-        </div>
+  <header role="banner">
+    <div class="masthead grid grid-middle gutter-1-2">
+      <div class="logo push-0 unit xs-1 s-1 m-1 l-1-4">
+        <a href="index.html" aria-label="Click here to go to homepage">
+          <div class="embed embed-4by1 push-r-1-4">
+            <img class="embed-item" src="images/logo.svg" alt="" role="presentation">
+          </div>
+        </a>
       </div>
-    </header>
+      <div class="nav unit xs-1 s-1 m-1 l-3-4">
+        <nav id="nav" tabindex="0" role="navigation">
+          <ul class="list-group-inline micro push-0">
+            <li class="gutter-1-8"><a id="current" class="btn" href="index.html" aria-label="Click here to go to homepage">Home</a></li>
+            <li class="gutter-1-8"><a class="btn" href="rescues.html" aria-label="Click here to meet the rescues">Cats</a></li>
+            <li class="gutter-1-8"><a class="btn" href="adopt.html" aria-label="Click here to file our forms">Adopt</a></li>
+            <li class="gutter-1-8"><a class="btn" href="#" aria-label="Click here to go to Contact page">Contact</a></li>
+            <li class="gutter-1-8"><a class="btn" href="#" aria-label="Click here to go to learn more about us">About Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="0" role="main">
 
     <section class="cat-text pad-t-2">
       <div class="grid pad-t-2 pad-b gutter">
@@ -59,10 +59,26 @@
 
     <section>
       <div class="gutter-2 pad-t-2">
+        <h2 class="exa center-content-horizontal">ADOPTION FORM</h2>
+
         <form method="POST" action="https://formspree.io/khan0355@algonquinlive.com">
           <fieldset class="push-none">
-          <legend class="push italic bold mega">Adoption Form</legend>
+            <legend class="pad-b medium">*Complete all required fields below*</legend>
             <div class="grid">
+              <div class="unit xs-1 s-1 m-1 l-1 island-1-8 push">
+                <div>
+                  <label class="push-1-8" for="adopt">Which Cat do you want to Adopt?</label>
+                  <select id="adopt" name="adopt">
+                    <option value="">Select a cat</option>
+                    <option>Berlioz</option>
+                    <option>Marie</option>
+                    <option>Toulouse</option>
+                    <option>O'malley</option>
+                    <option>Duchess</option>
+                    <option>Scat</option>
+                  </select>
+                </div>
+              </div>
               <div class="island-1-8 unit xs-1 m-1 l-1-2 push">
                 <label class="kilo" for="first-name">First Name</label>
                 <input id="first-name" name="first-name" required>
@@ -72,7 +88,6 @@
                 <input id="last-name" name="last-name" required>
               </div>
             </div>
-            <legend class="push italic bold mega"></legend>
             <div class="grid">
               <div class="push island-1-8 unit xs-1 m-1 l-1-2">
                 <label class="kilo" for="address">Street Address</label>
@@ -106,22 +121,22 @@
               </div>
               <div class="unit island-1-8 xs-1 m-1-2 l-2 push">
                 <label class="kilo" for="email">Email</label>
-                <input id="email" type="email" name="_replyto" required>
+                <input id="email" type="email" name="replyto" required>
               </div>
               <div class="unit island-1-8 xs-1 m-1-2 l-2 push">
                 <label class="kilo" for="phone-number">Phone number</label>
                 <input id="phone-number" type="number" name="phone-number" required>
               </div>
               <div class="unit island-1-8 xs-1 m-1 l-1 push">
-                <label class="kilo" for="subject">Which preferred contact would you like us to reach you by?</label>
-                <select class="form-input" id="subject" name="_subject" required>
+                <label class="kilo" for="contact">Which preferred contact would you like us to reach you by?</label>
+                <select class="form-input" id="contact" name="contact" required>
                   <option value="">Email</option>
                   <option>Phone</option>
                 </select>
               </div>
               <div class="unit island-1-8 xs-1 m-1 l-1 push">
-                <label class="kilo" for="subject">Which preferred secondary contact would you like us to reach you by?</label>
-                <select class="form-input" id="subject" name="subject" required>
+                <label class="kilo" for="secondary">Which preferred secondary contact would you like us to reach you by?</label>
+                <select class="form-input" id="secondary" name="secondary" required>
                   <option value="">Email</option>
                   <option>Phone</option>
                 </select>
@@ -133,26 +148,25 @@
             </div>
           </fieldset>
           <div class="button text-center pad-b-2">
-            <button class="btn btn-1" type="submit" value="Send">Sign Up</button>
+            <a class="btn btn-1" href="#">Sign Up</a>
           </div>
         </form>
       </div>
     </section>
-
-    <footer class="footer p-foot milli text-center pad-t pad-b" role="contentinfo">
-      <p class="text-center p-foot">Copyright © 2019 http://www.oldtownadoption.com</p>
-      <div class="nav unit xs-1-4 s-1-4 m-1 l-1">
-        <ul class="list-group-inline micro push-0 center-content-horizontal">
-          <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="index.html" aria-label="Click here to go to homepage">Home</a></li>
-          <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="rescues.html" aria-label="Click here to go to rescues">Rescues</a></li>
-          <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="adopt.html" aria-label="Click here to go to adoption form">Adopt</a></li>
-          <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="#" aria-label="Click here to go to homepage">Contact</a></li>
-          <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="#" aria-label="Click here to go to homepage">About Us</a></li>
-        </ul>
-      </div>
-    </footer>
-
   </main>
+
+  <footer role="contentinfo" class="footer p-foot milli text-center pad-t pad-b">
+    <p class="text-center p-foot">Copyright © 2019 http://www.oldtownadoption.com</p>
+    <div class="nav unit xs-1-4 s-1-4 m-1 l-1">
+      <ul class="list-group-inline micro push-0 center-content-horizontal">
+        <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="index.html" aria-label="Click here to go to homepage">Home</a></li>
+        <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="rescues.html" aria-label="Click here to go to rescues">Rescues</a></li>
+        <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="adopt.html" aria-label="Click here to go to adoption form">Adopt</a></li>
+        <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="#" aria-label="Click here to go to homepage">Contact</a></li>
+        <li class="kilo gutter-1-8"><a class="gutter-1-4 link-box btn-footer" href="#" aria-label="Click here to go to homepage">About Us</a></li>
+      </ul>
+    </div>
+  </footer>
 
 </body>
 </html>
